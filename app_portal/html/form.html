@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style_form.css">
+    <title>Expense Management System</title>
+</head>
+<body>
+    <header>
+        <h1>U1</h1>
+    </header>
+    <main>
+        <form action="" name="mainForm">
+            <div>
+                <label>Billing:</label>
+                <select name="billingTo" id="billing">
+                    <option value="talview">Talview</option>
+                    <option value="client">Client</option>
+                </select>
+                <br>
+                <label>Client:</label>
+                <input type="text" name="clientName" placeholder="Enter Client">
+                <br>
+                <label>Expense Category:</label>
+                <select name="expenseCategory">
+                    <option value="food" id="food">Food</option>
+                    <option value="travel" id="travel">Travel</option>
+                    <option value="stay" id="stay">Stay</option>
+                    <option value="other" id="other">Other</option>
+                </select>
+                <br>
+                <label>Remarks:</label>
+                <textarea name="remarks"></textarea>
+                <br>
+                <label>Bills and Invoice</label>
+                <input type="file" name="browseFiles">
+                <br>
+                <label>Amount:</label>
+                <input type="number" name="amount">
+                <br>
+                <label>Bill Date:</label>
+                <input type="date" name="billDate">
+                <br>
+                <button type="submit">Next</button>
+            </div>
+        </form>
+        <!-- <br> -->
+        <h4>Food</h4>
+        <form action="" method="" name="Food" id="food">
+            <label>No Of Dinners:</label>
+            <input type="number" name="noOfDinners" >
+            <br>
+            <input type="submit" name="submit" value="Submit">
+            <button click="index.html">Cancel</button>
+        </form>
+        <!-- <br> -->
+        <h4>Travel</h4>
+        <form action="" method="" name="Travel" id="travel">
+            <label>Mode:</label>
+            <select name="modeOfTravel">
+                <option value="cab">Cab</option>
+                <option value="train">Train</option>
+                <option value="bus">Bus</option>
+                <option value="flight">Flight</option>
+                <option calue="other">Other</option>
+            </select>
+            <br>
+            <label>From:</label>
+            <input type="text" name="fromLocation">
+            <br>
+            <label>To:</label>
+            <input type="text" name="toLocation">
+            <br>
+            <input type="submit" name="submit" value="Submit">
+            <button click="index.html">Cancel</button>
+        </form>
+        <!-- <br> -->
+        <h4>Stay</h4>
+        <form action="" method="" name="Stay" id="stay">
+            <label>From Date:</label>
+            <input type="date" name="fromDate">
+            <br>
+            <label>To Date:</label>
+            <input type="date" name="toDate">
+            <br>
+            <label>Place Of Stay:</label>
+            <input type="text" name="placeOfStay" >
+            <br>
+            <label>Destination City/State/Country:</label>
+            <textarea name="destination"></textarea>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+            <button click="index.html">Cancel</button>
+        </form>
+
+    </main>
+</body>
+<script src="../script/index.js"></script>
+</html>
